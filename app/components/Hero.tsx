@@ -11,8 +11,8 @@ export default function HomePage() {
   const goal = validGoals.includes(goalParam) ? goalParam : 'Break 80';
 
   return (
-    <main>
+    <>
       <h1>We have put together a swing improvement solution to help you [{goal}]</h1>
-    </main>
+    </>
   );
 }

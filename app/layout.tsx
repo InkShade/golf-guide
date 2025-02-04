@@ -17,11 +17,11 @@ export default function Layout({ children }) {
     <html lang="en">
       <body>
         <header>
-          <h1>Golf Guide</h1>
+          <img src="/assets/logo.png" alt="HackMotion Logo" />
         </header>
         {children}
         <footer>
-          <p>TO UPDATE</p>
+          <p>Copyright 2025 © HackMotion | All Rights Reserved</p>
         </footer>
       </body>
     </html>
