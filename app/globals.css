@@ -4,19 +4,25 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #E6E6E6;
+  --foreground: #000000;
+  --text-color:  #5773FF;
+  --color-white: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0;
+}
+
+.body-content {
+  padding: 32px 16px 16px 16px;
+}
+
+footer {
+  padding: 0;
 }

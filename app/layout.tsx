@@ -1,5 +1,6 @@
 import React from "react";
 import "./globals.css";
+import Image from "next/image";
 
 export const metadata = {
   title: "Golf Guide",
@@ -9,19 +10,29 @@ export const metadata = {
 
 export const viewport = {
   width: "device-width",
-  initialScale: 1,
+  initialScale: 1.0,
 };
 
 export default function Layout({ children }) {
   return (
     <html lang="en">
       <body>
-        <header>
-          <img src="/assets/logo.png" alt="HackMotion Logo" />
-        </header>
-        {children}
-        <footer>
-          <p>Copyright 2025 © HackMotion | All Rights Reserved</p>
+        <div className="body-content">
+          <header>
+            <Image
+              src="/assets/logo.png"
+              alt="HackMotion Logo"
+              width="214"
+              height="32"
+            />
+          </header>
+          {children}
+        </div>
+        <footer className="bg-zinc-50 text-center dark:bg-neutral-700 lg:text-left">
+          <div className="bg-black p-4 text-center text-surface dark:text-white">
+            Copyright 2025 ©<a href="https://hackmotion.com/"> HackMotion </a>|
+            All Rights Reserved
+          </div>
         </footer>
       </body>
     </html>
