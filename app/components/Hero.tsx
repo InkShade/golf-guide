@@ -1,8 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
+import { sendEvent } from "../../analytics-service/analytics";
 
 export default function HomePage() {
   const searchParams = useSearchParams();
@@ -10,6 +11,10 @@ export default function HomePage() {
   const goalParam = searchParams.get("goal");
 
   const goal = validGoals.includes(goalParam) ? goalParam : "Break 80";
+
+  useEffect(() => {
+    sendEvent('PageView', { url: window.location.href });
+  }, []);
 
   return (
     <div>

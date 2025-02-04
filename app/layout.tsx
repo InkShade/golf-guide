@@ -18,12 +18,13 @@ export default function Layout({ children }) {
     <html lang="en">
       <body>
         <div className="body-content">
-          <header>
+        <header>
             <Image
               src="/assets/logo.png"
               alt="HackMotion Logo"
               width="214"
               height="32"
+              className="hidden md:block"
             />
           </header>
           {children}

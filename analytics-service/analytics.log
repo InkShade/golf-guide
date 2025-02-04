@@ -1,0 +1,8 @@
+{"event":"PageView","url":"http://localhost:3000/?goal=Break+90","timestamp":"2025-02-04T19:18:38.327Z"}
+{"event":"PageView","url":"http://localhost:3000/?goal=Break+90","timestamp":"2025-02-04T19:26:09.835Z"}
+{"event":"FullVideoWatch","userId":"some-id","timestamp":"2025-02-04T19:26:52.524Z"}
+{"event":"PageView","url":"http://localhost:3000/?goal=Break+90","timestamp":"2025-02-04T19:57:45.465Z"}
+{"event":"FullVideoWatch","user":{"id":"user-123","browserInfo":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36","deviceInfo":"Desktop"},"meta":{"videoURL":"/assets/impactdrill.mp4","timestamp":"2025-02-04T19:58:25.084Z"},"timestamp":"2025-02-04T19:58:25.087Z"}
+{"event":"FullVideoWatch","user":{"id":"user-123","browserInfo":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36","deviceInfo":"Desktop"},"timestamp":"2025-02-04T20:00:15.742Z"}
+{"event":"FullVideoWatch","user":{"id":"user-123","browserInfo":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36","deviceInfo":"Mobile"},"timestamp":"2025-02-04T20:01:46.442Z"}
+{"event":"PageView","url":"http://localhost:3000/?goal=Break+90","timestamp":"2025-02-04T20:02:11.899Z"}
