@@ -6,3 +6,6 @@
 {"event":"FullVideoWatch","user":{"id":"user-123","browserInfo":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36","deviceInfo":"Desktop"},"timestamp":"2025-02-04T20:00:15.742Z"}
 {"event":"FullVideoWatch","user":{"id":"user-123","browserInfo":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36","deviceInfo":"Mobile"},"timestamp":"2025-02-04T20:01:46.442Z"}
 {"event":"PageView","url":"http://localhost:3000/?goal=Break+90","timestamp":"2025-02-04T20:02:11.899Z"}
+{"event":"PageView","url":"http://localhost:3000/?goal=Break+90","timestamp":"2025-02-04T20:13:59.512Z"}
+{"event":"PageView","url":"http://localhost:3000/?goal=Break+90","timestamp":"2025-02-04T20:14:04.250Z"}
+{"event":"PageView","url":"http://localhost:3000/?goal=Break+90","timestamp":"2025-02-04T20:16:14.612Z"}

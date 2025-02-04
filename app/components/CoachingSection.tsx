@@ -53,11 +53,11 @@ export default function CoachingSection() {
     }
 
     return (
-        <div className="flex flex-col items-center p-6 font-sans">
-            <h1 className="text-2xl font-semibold mb-4" style={{ color: 'var(--text-color)' }}>
+        <div className="flex flex-col items-center pt-6 pb-6 font-sans">
+            <h1 className="text-2xl font-semibold mb-4 md:text-4xl" style={{ color: 'var(--text-color)' }}>
                 The best solution for you: Impact Training Program
             </h1>
-            <div className="border-t border-black-400 pt-4 w-full" />
+            <div className="border-b border-gray-300 mb-5 w-full" />
 
             <div className="sm:flex flex-col md:flex-row items-center w-full max-w-screen-lg mx-auto">
                 <div className="w-full md:w-2/3 mb-4 md:mb-0">
