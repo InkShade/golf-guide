@@ -2,9 +2,8 @@
 
 import { useState, useRef, useEffect } from 'react';
 import ReactPlayer from 'react-player';
-import { sendEvent } from '../../analytics-service/analytics';
 
-export default function CoachingSection() {
+export default function CoachingSection({ onVideoEnd }: { onVideoEnd: () => void }) {
     const [currentTimestamp, setCurrentTimestamp] = useState(0);
     const [isClient, setIsClient] = useState(false);
     const playerRef = useRef<ReactPlayer | null>(null);
@@ -22,16 +21,6 @@ export default function CoachingSection() {
     const handleProgress = (state: { playedSeconds: number }) => {
         setCurrentTimestamp(state.playedSeconds);
     };
-
-    const handleVideoEnd = () => {
-        sendEvent('FullVideoWatch', {
-          user: {
-            id: 'user-123',
-            browserInfo: navigator.userAgent,
-            deviceInfo: window.innerWidth >= 768 ? 'Desktop' : 'Mobile'
-          },
-        });
-      };
 
     const calculateProgress = (currentTime: number) => {
         if (currentTime < 5) return 0;
@@ -67,7 +56,7 @@ export default function CoachingSection() {
                         playing
                         controls
                         onProgress={handleProgress}
-                        onEnded={handleVideoEnd}
+                        onEnded={onVideoEnd}
                         className="shadow-lg overflow-hidden"
                         width="100%"
                         height="100%"

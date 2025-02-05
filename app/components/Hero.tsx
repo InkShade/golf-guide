@@ -3,7 +3,6 @@
 import React, {useEffect} from "react";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
-import { sendEvent } from "../../analytics-service/analytics";
 
 export default function Hero() {
   const searchParams = useSearchParams();
@@ -11,10 +10,6 @@ export default function Hero() {
   const goalParam = searchParams.get("goal");
 
   const goal = validGoals.includes(goalParam) ? goalParam : "break 80";
-
-  useEffect(() => {
-    sendEvent('PageView', { url: window.location.href });
-  }, []);
 
   return (
     <div className="flex flex-col items-center md:grid md:grid-cols-2 md:gap-8 p-4 md:p-8 md:max-w-[1024px] md:m-auto md:mb-10">
