@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "analytics-service/analytics.ts"  ],
   "exclude": [
     "node_modules"
   ]

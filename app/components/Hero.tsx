@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import { sendEvent } from "../../analytics-service/analytics";
 
-export default function HomePage() {
+export default function Hero() {
   const searchParams = useSearchParams();
   const validGoals = ["break par", "break 80", "break 90", "break 100"];
   const goalParam = searchParams.get("goal");
