@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Hero from './components/Hero';
 import CoachingSection from './components/CoachingSection';
 import { v4 as uuidv4 } from 'uuid';
@@ -7,7 +7,7 @@ import { sendEvent } from "../analytics-service/analytics";
 import Cookies from 'js-cookie';
 
 export default function HomePage() {
-  const [isClient, setIsClient] = React.useState(false);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
