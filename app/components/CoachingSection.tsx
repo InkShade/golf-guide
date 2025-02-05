@@ -4,8 +4,8 @@ import { useState, useRef, useEffect } from 'react';
 import ReactPlayer from 'react-player';
 
 export default function CoachingSection({ onVideoEnd }: { onVideoEnd: () => void }) {
-    const [currentTimestamp, setCurrentTimestamp] = useState(0);
     const [isClient, setIsClient] = useState(false);
+    const [currentTimestamp, setCurrentTimestamp] = useState(0);
     const playerRef = useRef<ReactPlayer | null>(null);
 
     useEffect(() => {

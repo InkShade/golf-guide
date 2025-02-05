@@ -1,15 +1,23 @@
 "use client";
 
-import React, {useEffect} from "react";
+import React, { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 
 export default function Hero() {
+  const [isClient, setIsClient] = useState(false);
   const searchParams = useSearchParams();
-  const validGoals = ["break par", "break 80", "break 90", "break 100"];
+  const validGoals = ["break par", "break 80", "break 90", "break 100", "Break Par", "Break 80", "Break 90", "Break 100"];
   const goalParam = searchParams.get("goal");
-
   const goal = validGoals.includes(goalParam) ? goalParam : "break 80";
+
+  useEffect(() => {
+          setIsClient(true);
+      }, []);
+
+      if (!isClient) {
+        return null;
+    }
 
   return (
     <div className="flex flex-col items-center md:grid md:grid-cols-2 md:gap-8 p-4 md:p-8 md:max-w-[1024px] md:m-auto md:mb-10">
